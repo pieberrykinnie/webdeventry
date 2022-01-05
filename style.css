@@ -1,0 +1,209 @@
+body {
+    background-image: url(/images/code-coding-computer-571171.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #020F18;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 72rem;
+    margin: auto;
+}
+
+.logo-header {
+    margin: 0.5rem;
+}
+
+.logo-header img {
+    width: 4.5rem;
+}
+
+.header-content-list {
+    display: flex;
+    height: auto;
+}
+
+.header-content {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    transition: all 1s ease;
+}
+
+.header-content:hover {
+    background-color: white;
+    color: #020F18;
+}
+
+.header-content-active {
+    background-color: white;
+    color: #020F18;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.main-container {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    max-width: 76rem;
+    margin: auto;
+    border: 0.25rem solid #0d4c64;
+    padding: 1rem 2rem 4rem;
+    border-radius: 0.5rem;
+}
+
+.content-title {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    border-bottom: 1px solid grey;
+}
+
+.content {
+    line-height: 1.5rem;
+}
+
+.content-text-bold {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.core-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(2, 15, 24, 0.92) 0%, #020F18 100%);
+    min-width: 12.5rem;
+    min-height: 15rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    transition: all 1s ease;
+}
+
+@media screen and (max-width: 45rem) {
+    .core-team {
+        flex-direction: column;
+    }
+}
+
+.member-card-picture img {
+    width: 7.5rem;
+    transform: translateY(-1.5rem)
+}
+
+.member-card-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.member-card-description {
+    margin-top: 1rem;
+}
+
+.project {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0.5rem;
+}
+
+.project-preview {
+    max-width: 35rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    background-color: white;
+    transition: all 1s ease;
+}
+
+.member-card:hover, .project-preview:hover {
+    transform: scale(1.05);
+}
+
+.project-thumbnail img {
+    max-width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.project-name {
+    margin: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.project-description {
+    margin: 1rem;
+}
+
+.footer {
+    background-color: #020F18;
+    color: white;
+    bottom: 0;
+    margin-top: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 72rem;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.logo-footer {
+    margin: 0.5rem;
+}
+
+.logo-footer img {
+    width: 16rem;
+}
+
+@media screen and (max-width: 35rem) {
+    .footer-container {
+        flex-direction: column;
+    }
+}
